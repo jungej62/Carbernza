@@ -1,0 +1,34 @@
+Organic matter additions file "omad.100" will contain these values:
+omadtyp         organic matter addition type
+                  = 1 organic matter added to the structural and metabolic
+                      pools, astlbl = C13/C14 concentration
+                  = 2 organic matter added to som2c pool, astlbl = C13/C14
+                      concentration
+                  = 3 organic matter added to the structural and metabolic
+                      pools, astlbl = C13/C14 fraction
+                  = 4 organic matter added to som2c pool, astlbl = C13/C14
+                      fraction
+            Range: 1, 2, 3 or 4
+
+astgc           grams of C added with the addition of organic matter (g/m2)
+            Range: 0.0 to 9999.0
+
+astlbl          for omadtpy values of 1 and 2
+                  = C13/C14 concentration in C, when C is added as a result of
+                    the addition of organic matter
+                for omadtyp vlaues of 3 and 4
+                  = fraction of added C which is labeled, when C is added
+                    as a result of the addition of organic matter
+            Range: 0.0 to 2000.0
+
+astlig          lignin fraction content of organic matter
+            Range: 0.0 to 1.0
+
+astrec(1)       C/N ratio of added organic matter
+            Range: 1.0 to 500.0
+
+astrec(2)       C/P ratio of added organic matter
+            Range: 1.0 to 9999.0
+
+astrec(3)       C/S ratio of added organic matter
+            Range: 1.0 to 9999.0

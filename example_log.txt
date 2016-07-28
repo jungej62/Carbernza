@@ -1,0 +1,119 @@
+Entering function initlyrs
+
+Soil Structure: 
+lyr	dpthmn	dpthmx	bulkd	fieldc	wiltpt	ecoeff	tcoeff	sand	clay	org	swclim	satcond	pH
+  0	  0.0	  2.0	1.27	0.2526	0.0766	0.80	0.01	0.45	0.09	0.01	0.02	0.00200	5.90
+  1	  2.0	  5.0	1.27	0.2526	0.0766	0.20	0.04	0.45	0.09	0.01	0.03	0.00200	5.90
+  2	  5.0	 10.0	1.27	0.2526	0.0766	0.00	0.25	0.45	0.09	0.01	0.05	0.00200	5.90
+  3	 10.0	 20.0	1.27	0.2526	0.0766	0.00	0.30	0.45	0.09	0.01	0.07	0.00200	5.90
+  4	 20.0	 30.0	1.27	0.2526	0.0766	0.00	0.10	0.45	0.09	0.01	0.08	0.00200	5.90
+  5	 30.0	 45.0	1.27	0.2526	0.0766	0.00	0.05	0.45	0.09	0.01	0.08	0.00200	5.90
+  6	 45.0	 60.0	1.27	0.2526	0.0766	0.00	0.04	0.45	0.09	0.01	0.08	0.00200	5.90
+  7	 60.0	 75.0	1.27	0.2526	0.0766	0.00	0.03	0.45	0.09	0.01	0.08	0.00200	5.90
+  8	 75.0	 90.0	1.27	0.2526	0.0766	0.00	0.02	0.45	0.09	0.01	0.08	0.00200	5.90
+  9	 90.0	105.0	1.27	0.2526	0.0766	0.00	0.01	0.45	0.09	0.01	0.08	0.00200	5.90
+ 10	105.0	120.0	1.27	0.2526	0.0766	0.00	0.00	0.45	0.09	0.01	0.08	0.00200	5.90
+ 11	120.0	150.0	1.27	0.2526	0.0766	0.00	0.00	0.45	0.09	0.01	0.08	0.00200	5.90
+ 12	150.0	180.0	1.27	0.2526	0.0766	0.00	0.00	0.45	0.09	0.01	0.08	0.00200	5.90
+ 13	180.0	210.0	1.27	0.2526	0.0766	0.00	0.00	0.45	0.09	0.01	0.08	0.00200	5.90
+
+Calculated soil parameters: 
+lyr	width	depth	thetas	psis	b	binv
+  0	  2.0	  1.0	 43.777	 25.252	 4.378	0.2284
+  1	  3.0	  3.5	 43.777	 25.252	 4.378	0.2284
+  2	  5.0	  7.5	 43.777	 25.252	 4.378	0.2284
+  3	 10.0	 15.0	 43.777	 25.252	 4.378	0.2284
+  4	 10.0	 25.0	 43.777	 25.252	 4.378	0.2284
+  5	 15.0	 37.5	 43.777	 25.252	 4.378	0.2284
+  6	 15.0	 52.5	 43.777	 25.252	 4.378	0.2284
+  7	 15.0	 67.5	 43.777	 25.252	 4.378	0.2284
+  8	 15.0	 82.5	 43.777	 25.252	 4.378	0.2284
+  9	 15.0	 97.5	 43.777	 25.252	 4.378	0.2284
+ 10	 15.0	112.5	 43.777	 25.252	 4.378	0.2284
+ 11	 30.0	135.0	 43.777	 25.252	 4.378	0.2284
+ 12	 30.0	165.0	 43.777	 25.252	 4.378	0.2284
+ 13	 30.0	195.0	 43.777	 25.252	 4.378	0.2284
+nelyrs =    2
+Exiting function initlyrs
+Entering function initsite
+usexdrvrs: 0
+sublimscale: 1.000000
+reflec: 0.180000
+albedo: 0.200000
+fswcinit: 0.600000
+dmpflux: 0.000008
+hours_rain: 10.000000
+drainlag: 0
+watertable: 1  0
+watertable: 2  0
+watertable: 3  0
+watertable: 4  0
+watertable: 5  0
+watertable: 6  0
+watertable: 7  0
+watertable: 8  0
+watertable: 9  0
+watertable: 10  0
+watertable: 11  0
+watertable: 12  0
+hpotdeep: -200.000000
+ksatdeep: 0.000300
+Cloud cover:
+cloud cover: 1   60.00
+cloud cover: 2   59.00
+cloud cover: 3   55.00
+cloud cover: 4   62.00
+cloud cover: 5   67.00
+cloud cover: 6   72.00
+cloud cover: 7   73.00
+cloud cover: 8   76.00
+cloud cover: 9   73.00
+cloud cover: 10   75.00
+cloud cover: 11   65.00
+cloud cover: 12   66.00
+tbotmn: 0.000000
+tbotmx: 12.400000
+damping factor: 0.003000
+lag time: 30.000000
+water/temp coeff: 0.030000
+jdayStart: 0
+jdayEnd: 0
+N2O adjustment factor at field capacity: 0.015000
+N2O adjustment factor at wilting point: 0.002000
+Maximum daily nitrifcation amount: 0.400000
+Snow insulating flag: 1
+Fraction of new net mineralization to NO3: 0.200000
+Adjustment on WFPS inflection point for denit: 1.000000
+N2/N2O ratio adjustment coefficient: 1.000000
+Exiting function initsite
+sitlat =  42.38
+rlatitude =   0.74
+ly   swcinit    swcmin    minpot
+ 0    0.3031    0.0332  -81920.0000
+ly   swcinit    swcmin    minpot
+ 1    0.4547    0.0799  -81920.0000
+ly   swcinit    swcmin    minpot
+ 2    0.7578    0.2331  -81920.0000
+ly   swcinit    swcmin    minpot
+ 3    1.5157    0.6662  -81920.0000
+ly   swcinit    swcmin    minpot
+ 4    1.5157    0.7662  -52002.6055
+ly   swcinit    swcmin    minpot
+ 5    2.2735    1.1493  -52002.5977
+ly   swcinit    swcmin    minpot
+ 6    2.2735    1.1493  -52002.5977
+ly   swcinit    swcmin    minpot
+ 7    2.2735    1.1493  -52002.5977
+ly   swcinit    swcmin    minpot
+ 8    2.2735    1.1493  -52002.5977
+ly   swcinit    swcmin    minpot
+ 9    2.2735    1.1493  -52002.5977
+ly   swcinit    swcmin    minpot
+10    2.2735    1.1493  -52002.5977
+ly   swcinit    swcmin    minpot
+11    4.5470    2.2986  -52002.5977
+ly   swcinit    swcmin    minpot
+12    4.5470    2.2986  -52002.5977
+ly   swci 
+   Model is running...
+ Using only air temp for PET calc
