@@ -1,5 +1,5 @@
 5             Starting year
-2016          Last year
+1880          Last year
 CrookstonIWG.100      Site file name
 0             Labeling type
 -1            Labeling year
@@ -82,72 +82,4 @@ C
 R    
    1  258 CULT
 R    
--999 -999 X
-3             Block #   Continuous wheat
-1920          Last year
-1             Repeats # years
-1881          Output starting year
-1             Output month
-0.083         Output interval
-F             Weather choice
-CrookLng.wth        
-   1   91 CULT
-C    
-   1  105 CROP
-SW1  
-   1  106 PLTM
-   1  205 HARV
-GS   
-   1  205 LAST
--999 -999 X
-4             Block #   Low input wheat soy
-1956          Last year
-2             Repeats # years
-1921          Output starting year
-1             Output month
-0.083         Output interval
-F             Weather choice
-CrookLng.wth        
-   1  105 CULT
-C    
-   1  115 CROP
-SW2  
-   1  115 PLTM
-   1  237 HARV
-GS   
-   2  121 CROP
-SYBN 
-   2  130 CULT
-C    
-   2  135 PLTM
-   2  268 HARV
-G    
--999 -999 X
-5             Block #   No till wheat soy
-2016          Last year
-2             Repeats # years
-1957          Output starting year
-1             Output month
-0.083         Output interval
-F             Weather choice
-CrookLng.wth        
-   1  105 CULT
-C    
-   1  115 CROP
-SW3  
-   1  115 PLTM
-   1  119 PLTM
-   1  119 FERT
-N9.32
-   1  119 CULT
-N    
-   1  237 HARV
-G    
-   2  121 CROP
-SYBN 
-   2  135 PLTM
-   2  135 CULT
-N    
-   2  268 HARV
-G    
 -999 -999 X
