@@ -22,7 +22,9 @@ Year Month Option
 9             Output month
 1.000         Output interval
 F             Weather choice
-CrookLng.wth        
+DayMetLD.wth        
+   1    1 CROP
+G3N  
    1   91 FRST
    1  135 GRAZ
 GM   
@@ -32,6 +34,19 @@ GM
 GM   
    1  288 LAST
    1  319 SENM
+   2    1 CROP
+G3N  
+   2   91 FRST
+   2  135 GRAZ
+GM   
+   2  166 GRAZ
+GM   
+   2  196 GRAZ
+GM   
+   2  288 LAST
+   2  319 SENM
+   3    1 CROP
+G3N  
    3   91 FRST
    3  135 GRAZ
 GM   
@@ -41,6 +56,8 @@ GM
 GM   
    3  288 LAST
    3  319 SENM
+   4    1 CROP
+G3N  
    4   91 FRST
    4  135 GRAZ
 GM   
@@ -50,6 +67,8 @@ GM
 GM   
    4  288 LAST
    4  319 SENM
+   5    1 CROP
+G3N  
    5   92 FRST
    5   91 FIRE
 M    
@@ -68,8 +87,9 @@ GM
 1880          Output starting year
 1             Output month
 0.083         Output interval
-F             Weather choice
-CrookLng.wth        
+C             Weather choice
+   1    1 CROP
+G3N  
    1  105 CULT
 P    
    1  135 CULT
@@ -82,6 +102,18 @@ C
 R    
    1  258 CULT
 R    
+   2  105 CULT
+P    
+   2  135 CULT
+C    
+   2  166 CULT
+C    
+   2  196 CULT
+C    
+   2  227 CULT
+R    
+   2  258 CULT
+R    
 -999 -999 X
 3             Block #   Continuous wheat
 1920          Last year
@@ -89,8 +121,7 @@ R
 1881          Output starting year
 1             Output month
 0.083         Output interval
-F             Weather choice
-CrookLng.wth        
+C             Weather choice
    1   91 CULT
 C    
    1  105 CROP
@@ -99,6 +130,14 @@ SW1
    1  205 HARV
 GS   
    1  205 LAST
+   2   91 CULT
+C    
+   2  105 CROP
+SW1  
+   2  106 PLTM
+   2  205 HARV
+GS   
+   2  205 LAST
 -999 -999 X
 4             Block #   Low input wheat soy
 1956          Last year
@@ -106,8 +145,7 @@ GS
 1921          Output starting year
 1             Output month
 0.083         Output interval
-F             Weather choice
-CrookLng.wth        
+C             Weather choice
    1  105 CULT
 C    
    1  115 CROP
@@ -129,8 +167,7 @@ G
 1957          Output starting year
 1             Output month
 0.083         Output interval
-F             Weather choice
-CrookLng.wth        
+C             Weather choice
    1  105 CULT
 C    
    1  115 CROP

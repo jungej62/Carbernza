@@ -22,7 +22,7 @@ Year Month Option
 12            Output month
 1.000         Output interval
 F             Weather choice
-CrookCl2.wth          
+DayMetLD.wth        
    1   15 CROP
 G3N  
    1   15 GRAZ
