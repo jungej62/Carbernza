@@ -126,6 +126,9 @@ M
 1             Output month
 0.083         Output interval
 C             Weather choice
+   1    1 CROP
+G3N  
+   1   91 FRST
    1  105 CULT
 P    
    1  135 CULT
@@ -138,18 +141,8 @@ C
 R    
    1  258 CULT
 R    
-   2  105 CULT
-P    
-   2  135 CULT
-C    
-   2  166 CULT
-C    
-   2  196 CULT
-C    
-   2  227 CULT
-R    
-   2  258 CULT
-R    
+   1  288 LAST
+   1  319 SENM
 -999 -999 X
 3             Block #   Continuous wheat
 1920          Last year
@@ -158,20 +151,14 @@ R
 1             Output month
 0.083         Output interval
 C             Weather choice
-   1   91 CULT
-C    
-   1  105 CROP
+   1   91 CROP
 SW1  
+   1   95 CULT
+C    
    1  106 PLTM
-   1  205 HARV
+   1  214 LAST
+   1  215 HARV
 GS   
-   1  205 LAST
-   2   91 CULT
-C    
-   2  105 CROP
-SW1  
-   2  106 PLTM
-   2  205 HARV
-GS   
-   2  205 LAST
+   1  220 CULT
+C 
 -999 -999 X

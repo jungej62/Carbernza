@@ -125,7 +125,7 @@ M
 1881          Output starting year
 1             Output month
 0.083         Output interval
-C             Weather choice 
+C             Weather choice
    1  105 CULT
 P    
    1  135 CULT
