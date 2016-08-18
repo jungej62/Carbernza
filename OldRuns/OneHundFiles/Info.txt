@@ -1,2 +1,0 @@
-The crop.100 file is the original plus IWG. The one being 
-used in Carberza includes Oats from John Field's GitHub

@@ -1,2 +1,0 @@
-This is a schedule file with Continuouse corn from 1882 to 1920, then a wheat-oat-2yr pasture from 
-1921 to 1980.

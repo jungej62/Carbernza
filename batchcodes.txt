@@ -1,0 +1,3 @@
+cd C:\Users\junge037\Google Drive\Intermediate_wheatgrass_research\NIFA_Experiments\Carbernza
+dailydaycent -s spin -n spin
+dailydaycent_list100 spin spin outvars.txt
