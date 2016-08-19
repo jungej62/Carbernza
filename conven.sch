@@ -1,5 +1,5 @@
 1882          Starting year
-2013          Last year
+2015          Last year
 CrookstonIWG.100      Site file name
 0             Labeling type
 -1            Labeling year
@@ -139,7 +139,7 @@ H
    3  236 HARV
 G    
    4   91 CROP
-BAR2  
+BAR2 
    4  125 FERT
 N9.32
    4  130 CULT
@@ -151,18 +151,19 @@ H
 G    
 -999 -999 X
 5             Block #   corn soy
-2013          Last year
+2015          Last year
 2             Repeats # years
 2002          Output starting year
 1             Output month
 0.083         Output interval
-C             Weather choice
+F             Weather choice
+Crook.wth        
    1   95 FERT
 N7.85
    1  125 FERT
 N7.85
    1  128 CROP
-C6   
+C10  
    1  129 CULT
 N
    1  129 PLTM    
