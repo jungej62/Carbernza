@@ -4936,7 +4936,7 @@ IWG   Intermediate_wheatgrass
 60.0              'BIOK5'     
 1.0               'PLTMRF'    
 100.0             'FULCAN'    
-0.00000           'FRTCINDX'  
+1.00000           'FRTCINDX'  
 0.60000           'FRTC(1)'   
 0.5               'FRTC(2)'   
 60                'FRTC(3)'   

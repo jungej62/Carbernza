@@ -1,5 +1,5 @@
 library("XML");library(spatialEco); library(plyr)
-require(devtools); require(latticeExtra)
+require(devtools); require(latticeExtra); library(hydroGOF)
 install_github("khufkens/daymetr") # install the package
 require(DaymetR)
 
@@ -71,23 +71,44 @@ corn<-read.csv("C:/Users/junge037/Documents/USDA_NIFA/PostApproval/DayCent/PolkC
 xyplot(area~year, data=corn, groups=type)
 xyplot(yield~year, data=corn, groups=type)
 
-conven1<-read.csv("C:/Users/junge037/Google Drive/Carbernza/Analysis/conven-stat1.csv")
-xyplot(buacre~time, data=conven1, groups=crop, auto.key=T)
+conven1<-read.csv("C:/Users/junge037/Google Drive/Carbernza/Analysis/conven-output.csv")
+xyplot(bushyld~year, data=conven1, groups=crop, auto.key=T)
 
 #Validation... really good!
 
+conven1<-read.csv("C:/Users/junge037/Google Drive/Carbernza/Analysis/conven-output.csv")
+
+
 corndat<-droplevels(subset(conven1, crop=="corn"))
 zzz<-droplevels(subset(corn, type=="CORN, GRAIN"))
-zzz<-zzz[zzz$year %in% corndat$time,]
-names(zzz)[c(1,6)]<-c("time", "buacre")
-corndat2<-rbind(corndat[,c(1,13)],zzz[,c(1,6)])
-corndat2$type<-c(rep("model",7), rep("real",6))
-xyplot(buacre~time, corndat2, groups=type, auto.key=T)
+zzz<-zzz[zzz$year %in% corndat$year,]
+names(zzz)[ncol(zzz)]<-c("bushyld") #renaming last column bushyld
+corndat2<-rbind(corndat[,c("year", "bushyld")],
+                zzz[,c("year", "bushyld")])
+corndat2$type<-c(rep("model",length(corndat$year)), 
+                 rep("real",length(zzz$year)))
+xyplot(bushyld~year, corndat2, groups=type, auto.key=T)
+rmse(corndat$bushyld, zzz$bushyld)
+
 
 wheatdat<-droplevels(subset(conven1, crop=="wheat"))
 zzz<-droplevels(subset(wheat, crop=="WHEAT, SPRING, (EXCL DURUM)"))
-zzz<-zzz[zzz$year %in% wheatdat$time,]
-names(zzz)[c(1,7)]<-c("time", "buacre")
-wheatdat2<-rbind(wheatdat[,c(1,13)],zzz[,c(1,7)])
-wheatdat2$type<-c(rep("model",31), rep("real",31))
-xyplot(buacre~time, wheatdat2, groups=type, auto.key=T)
+zzz<-zzz[zzz$year %in% wheatdat$year,]
+names(zzz)[ncol(zzz)]<-c("bushyld") #renaming last column bushyld
+wheatdat2<-rbind(wheatdat[,c("year", "bushyld")],
+                zzz[,c("year", "bushyld")])
+wheatdat2$type<-c(rep("model",length(wheatdat$year)), 
+                 rep("real",length(zzz$year)))
+xyplot(bushyld~year, wheatdat2, groups=type, auto.key=T)
+rmse(subset(wheatdat, year>"1920")$bushyld, zzz$bushyld)
+
+soydat<-droplevels(subset(conven1, crop=="soy"))
+zzz<-soybean
+zzz<-zzz[zzz$year %in% soydat$year,]
+names(zzz)[ncol(zzz)]<-c("bushyld") #renaming last column bushyld
+soydat2<-rbind(soydat[,c("year", "bushyld")],
+                zzz[,c("year", "bushyld")])
+soydat2$type<-c(rep("model",length(soydat$year)), 
+                 rep("real",length(zzz$year)))
+xyplot(bushyld~year, soydat2, groups=type, auto.key=T)
+rmse(soydat$bushyld, zzz$bushyld)

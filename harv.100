@@ -32,4 +32,11 @@ T     Thin_and_remove
 0.00000           'FLGHRV'    
 1.00000           'RMVSTR'    
 0.00000           'REMWSD'    
-1.00000           'HIBG'      
+1.00000           'HIBG'
+G90     Grain_90%_straw_removal
+0.00000           'AGLREM'    
+0.90000           'BGLREM'    
+1.00000           'FLGHRV'    
+0.90000           'RMVSTR'    
+0.10000           'REMWSD'    
+0.00000           'HIBG'      
