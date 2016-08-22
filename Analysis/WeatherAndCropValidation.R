@@ -1,5 +1,5 @@
 library("XML");library(spatialEco); library(plyr)
-require(devtools); require(latticeExtra); library(hydroGOF)
+require(devtools); require(latticeExtra); library(hydroGOF);library(reshape2)
 install_github("khufkens/daymetr") # install the package
 require(DaymetR)
 
@@ -89,7 +89,9 @@ corndat2$type<-c(rep("model",length(corndat$year)),
                  rep("real",length(zzz$year)))
 xyplot(bushyld~year, corndat2, groups=type, auto.key=T)
 rmse(corndat$bushyld, zzz$bushyld)
-
+corndat3<-dcast(corndat2, year~type, value.var="bushyld")
+plot(real~model, data=corndat3)
+summary(lm(model~real, data=corndat3))
 
 wheatdat<-droplevels(subset(conven1, crop=="wheat"))
 zzz<-droplevels(subset(wheat, crop=="WHEAT, SPRING, (EXCL DURUM)"))
@@ -101,6 +103,8 @@ wheatdat2$type<-c(rep("model",length(wheatdat$year)),
                  rep("real",length(zzz$year)))
 xyplot(bushyld~year, wheatdat2, groups=type, auto.key=T)
 rmse(subset(wheatdat, year>"1920")$bushyld, zzz$bushyld)
+wheatdat3<-dcast(wheatdat2, year~type, value.var="bushyld")
+summary(lm(model~real, data=wheatdat3))
 
 soydat<-droplevels(subset(conven1, crop=="soy"))
 zzz<-soybean
@@ -112,3 +116,5 @@ soydat2$type<-c(rep("model",length(soydat$year)),
                  rep("real",length(zzz$year)))
 xyplot(bushyld~year, soydat2, groups=type, auto.key=T)
 rmse(soydat$bushyld, zzz$bushyld)
+soydat3<-dcast(soydat2, year~type, value.var="bushyld")
+summary(lm(model~real, data=soydat3))

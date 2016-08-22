@@ -28,6 +28,7 @@ SW1
    1   95 CULT
 C    
    1  106 PLTM
+   1  215 LAST
    1  215 HARV
 GS   
    1  220 CULT
@@ -45,6 +46,7 @@ P
    1   98 CROP
 SW2  
    1  106 PLTM
+   1  215 LAST
    1  215 HARV
 GS   
    1  220 CULT
@@ -54,6 +56,7 @@ C
    2   98 CROP
 OAT2 
    2  120 PLTM
+   2  228 LAST
    2  228 HARV
 GS   
    2  232 GRAZ
@@ -95,6 +98,7 @@ SW3
    1   94 CULT
 C    
    1  106 PLTM
+   1  215 LAST
    1  215 HARV
 GS   
    1  220 CULT
@@ -113,18 +117,16 @@ SW3
 N9.32
    1  106 PLTM
    1  106 CULT
-N    
-   1  140 CULT
-H    
+N
+   1  236 LAST    
    1  236 HARV
 G    
    2  121 CROP
 SYBN2
    2  135 CULT
 N
-   2  135 PLTM    
-   2  166 CULT
-H    
+   2  135 PLTM
+   2  267 LAST   
    2  267 HARV
 G    
    3   91 CROP
@@ -133,9 +135,8 @@ SW3
 N9.32
    3  106 CULT
 N
-   3  106 PLTM    
-   3  140 CULT
-H    
+   3  106 PLTM
+   3  236 LAST   
    3  236 HARV
 G    
    4   91 CROP
@@ -144,9 +145,8 @@ BAR2
 N9.32
    4  130 CULT
 N
-   4  130 PLTM    
-   4  140 CULT
-H    
+   4  130 PLTM
+   4  236 LAST   
    4  236 HARV
 G    
 -999 -999 X
@@ -166,19 +166,17 @@ N7.85
 C10  
    1  129 CULT
 N
-   1  129 PLTM    
-   1  156 CULT
-H    
+   1  129 PLTM
+   1  293 LAST   
    1  293 HARV
-G    
+G
    2  121 CROP
 SYBN 
 
    2  135 CULT
 N
-   2  135 PLTM    
-   2  166 CULT
-H    
+   2  135 PLTM
+   2  267 LAST   
    2  267 HARV
 G    
 -999 -999 X
@@ -193,9 +191,8 @@ C             Weather choice
 SYBN 
    1  135 CULT
 N
-   1  135 PLTM    
-   1  166 CULT
-H      
+   1  135 PLTM
+   1  267 LAST   
    1  267 HARV
 G
    1  269 CULT

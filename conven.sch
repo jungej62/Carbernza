@@ -113,9 +113,7 @@ SW3
 N9.32
    1  106 CULT
 N
-   1  106 PLTM    
-   1  140 CULT
-H    
+   1  106 PLTM        
    1  236 HARV
 G    
    2  121 CROP
@@ -123,8 +121,6 @@ SYBN2
    2  135 CULT
 N
    2  135 PLTM    
-   2  166 CULT
-H    
    2  267 HARV
 G    
    3   91 CROP
@@ -134,8 +130,6 @@ N9.32
    3  106 CULT
 N
    3  106 PLTM    
-   3  140 CULT
-H    
    3  236 HARV
 G    
    4   91 CROP
@@ -144,9 +138,7 @@ BAR2
 N9.32
    4  130 CULT
 N
-   4  130 PLTM    
-   4  140 CULT
-H    
+   4  130 PLTM        
    4  236 HARV
 G    
 -999 -999 X
@@ -167,17 +159,13 @@ C10
    1  129 CULT
 N
    1  129 PLTM    
-   1  156 CULT
-H    
    1  293 HARV
 G    
    2  121 CROP
 SYBN 
    2  135 CULT
 N
-   2  135 PLTM    
-   2  166 CULT
-H    
+   2  135 PLTMH    
    2  267 HARV
 G    
 -999 -999 X
