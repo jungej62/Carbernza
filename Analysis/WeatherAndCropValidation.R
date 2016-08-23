@@ -1,6 +1,7 @@
-library("XML");library(spatialEco); library(plyr)
+library("XML");library(spatialEco); library(plyr); library(devtools)
 require(devtools); require(latticeExtra); library(hydroGOF);library(reshape2)
 install_github("khufkens/daymetr") # install the package
+source('C:/Users/junge037/Google Drive/Carbernza/Analysis/Alfgerm/HelperFunctions.R')
 require(DaymetR)
 
 setwd("C:/Users/junge037/Desktop/")
