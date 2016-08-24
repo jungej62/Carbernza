@@ -35,6 +35,7 @@ converter<-function(filename){
   dat$gmyld<-dat$cgrain/dat$carbon #calculating grain yield in grams per square meter
   dat$lbsyld<-dat$gmyld*(1+dat$moisture)*8.92 #converting grams/m2 yield to lbs per acre with correct moisture content
   dat$bushyld<-dat$lbsyld/dat$bushelwt #converting lbs/acre at proper moisture to bushels per acre
+  dat<-arrange(dat, year, month)
   write.csv(dat, paste("C:/Users/junge037/Google Drive/Carbernza/Analysis/",filename,"-output.csv",
                         sep=""), row.names=F )
 }
